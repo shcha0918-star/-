@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>영화 정보 - 인터스텔라 · 기생충</title>
+<style>
+  :root {
+    --bg: #f4f5f7;
+    --card: #ffffff;
+    --text: #1d2330;
+    --muted: #6a7385;
+    --line: #e3e6ec;
+    --accent: #2f5bea;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #12141a;
+      --card: #1c2029;
+      --text: #eceff5;
+      --muted: #98a1b5;
+      --line: #2c3240;
+      --accent: #7c9bff;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 32px 16px;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Malgun Gothic", "Apple SD Gothic Neo", system-ui, sans-serif;
+    line-height: 1.6;
+  }
+  h1 { text-align: center; margin: 0 0 28px; font-size: 1.7rem; }
+  .grid {
+    max-width: 960px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 24px;
+  }
+  .card h2 { margin: 0; font-size: 1.4rem; }
+  .en { color: var(--muted); font-size: 0.95rem; margin-bottom: 14px; }
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 16px; }
+  .tag {
+    font-size: 0.8rem;
+    padding: 2px 10px;
+    border-radius: 999px;
+    border: 1px solid var(--accent);
+    color: var(--accent);
+  }
+  dl { margin: 0 0 16px; }
+  .row { display: flex; gap: 12px; padding: 7px 0; border-top: 1px solid var(--line); }
+  dt { flex: 0 0 72px; color: var(--muted); font-size: 0.9rem; }
+  dd { margin: 0; }
+  .plot { margin: 0; font-size: 0.95rem; }
+</style>
+</head>
+<body>
+  <h1>영화 정보</h1>
+  <div class="grid">
+
+    <article class="card">
+      <h2>인터스텔라</h2>
+      <div class="en">Interstellar</div>
+      <div class="tags"><span class="tag">SF</span><span class="tag">드라마</span><span class="tag">모험</span></div>
+      <dl>
+        <div class="row"><dt>감독</dt><dd>크리스토퍼 놀란</dd></div>
+        <div class="row"><dt>출연</dt><dd>매튜 매코너헤이, 앤 해서웨이, 제시카 차스테인, 마이클 케인</dd></div>
+        <div class="row"><dt>개봉</dt><dd>2014년 (국내 11월 6일)</dd></div>
+        <div class="row"><dt>상영시간</dt><dd>169분</dd></div>
+        <div class="row"><dt>음악</dt><dd>한스 짐머</dd></div>
+        <div class="row"><dt>수상</dt><dd>제87회 아카데미 시각효과상</dd></div>
+        <div class="row"><dt>국내 관객</dt><dd>약 1,030만 명</dd></div>
+      </dl>
+      <p class="plot">
+        식량난과 환경 악화로 멸망해 가는 지구. 전직 우주비행사 쿠퍼는 인류가 이주할 새로운 행성을 찾기 위해
+        웜홀을 통과하는 우주 탐사에 나서고, 딸과의 약속 사이에서 시간과 중력의 한계에 맞닥뜨린다.
+      </p>
+    </article>
+
+    <article class="card">
+      <h2>기생충</h2>
+      <div class="en">Parasite</div>
+      <div class="tags"><span class="tag">드라마</span><span class="tag">스릴러</span><span class="tag">블랙 코미디</span></div>
+      <dl>
+        <div class="row"><dt>감독</dt><dd>봉준호</dd></div>
+        <div class="row"><dt>출연</dt><dd>송강호, 이선균, 조여정, 최우식, 박소담</dd></div>
+        <div class="row"><dt>개봉</dt><dd>2019년 5월 30일</dd></div>
+        <div class="row"><dt>상영시간</dt><dd>132분</dd></div>
+        <div class="row"><dt>수상</dt><dd>칸 영화제 황금종려상, 아카데미 작품상·감독상·각본상·국제영화상</dd></div>
+        <div class="row"><dt>국내 관객</dt><dd>약 1,030만 명</dd></div>
+      </dl>
+      <p class="plot">
+        전원 백수인 기택의 가족은 아들 기우가 명문대생으로 속여 박 사장 집의 과외 교사로 들어가면서
+        차례로 그 집에 스며든다. 그러나 예상치 못한 사건이 두 가족의 운명을 뒤흔든다.
+      </p>
+    </article>
+
+  </div>
+</body>
+</html>
